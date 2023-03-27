@@ -1,0 +1,30 @@
+{
+  "name": "chatgpt_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuuki12/chatgpt_typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuuki12/chatgpt_typescript/issues"
+  },
+  "homepage": "https://github.com/fuuki12/chatgpt_typescript#readme",
+  "dependencies": {
+    "@types/node": "^18.15.10",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "openai": "^3.2.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
